@@ -13,7 +13,9 @@
   <% end %>
 </div>
 
+<% if user_signed_in? %>
 <%= link_to "New event", new_event_path %>
+<% end %>
 
 <% if user_signed_in? %> 
  <div> Welcome <%= current_user.username %> </div> 
